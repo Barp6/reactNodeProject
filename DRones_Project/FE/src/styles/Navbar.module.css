@@ -1,0 +1,51 @@
+.navbar {
+  position: fixed;
+  /* מצמיד את הניווט לחלק העליון של הדף */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  /* גובה הניווט */
+  background: rgba(255, 255, 255, 0.8);
+  /* רקע שקוף עם אפקט זכוכית */
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  /* מבטיח שהניווט תמיד מעל הכל */
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+  color: #007bff;
+}
+
+.logoutButton {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logoutButton:hover {
+  background: darkred;
+}
